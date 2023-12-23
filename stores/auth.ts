@@ -1,6 +1,9 @@
 import { defineStore } from "pinia"
 import type { Ref } from "vue"
 
+export interface SignInOptions {
+    using?: "server" | "client"
+}
 
 export interface User {
     id: number
@@ -34,9 +37,22 @@ export const useAuthStore = defineStore("user", () => {
         loggingIn.value = false
     }
 
-    const signInWithDiscord = () => {
-        let loginUrl = useRuntimeConfig().public.DISCORD_LOGIN_URL
-        loggingIn.value = true // won't matter if not persisted via pinia plugin
+    const signInWithDiscord = (options: SignInOptions) => {
+
+        if (!options) options = {}
+
+        let loginUrl: string
+
+        switch (options.using) {
+            case "server":
+                loginUrl = useRuntimeConfig().public.DISCORD_LOGIN_URL_SERVER! as string
+                break
+            case "client":
+            default:
+                loginUrl = useRuntimeConfig().public.DISCORD_LOGIN_URL! as string
+                break
+        }
+
         window.location.assign(loginUrl)
     }
 
