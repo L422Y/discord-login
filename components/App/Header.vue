@@ -9,7 +9,7 @@
                     <button @click="auth.signOut()">Sign out</button>
                 </div>
                 <div v-else>
-                    <button @click="auth.signInWithDiscord()">Sign in with Discord</button>
+                  <button @click="useRouter().push('/login')">Sign In</button>
                 </div>
             </ClientOnly>
         </nav>
@@ -38,12 +38,6 @@ header {
     text-transform: uppercase;
   }
 
-  button {
-    padding: 0.5rem 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    cursor: pointer;
-  }
+
 }
 </style>
