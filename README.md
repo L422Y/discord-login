@@ -1,9 +1,17 @@
 # Nuxt 3 with Discord OAuth
 
+![GitHub deployments](https://img.shields.io/github/deployments/L422Y/discord-login/production?label=vercel)
+
+
 This is a simple example of how to use Discord OAuth with Nuxt 3.
 
 It uses Pinia, and implements a simple auth store and server side sessions so that the user can refresh the page and
 still be logged in.
+
+Check out the [live demo](https://discord-login-weld.vercel.app/).
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/L422Y/discord-login)
+[![Deploy with Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/L422Y/discord-login)
 
 ## Configuration
 
