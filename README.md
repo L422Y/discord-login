@@ -49,7 +49,6 @@ bun run dev
 Build the application for production:
 
 ```bash
-# bun
 bun run build
 ```
 
