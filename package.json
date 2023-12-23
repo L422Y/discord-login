@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "discord-login",
   "private": true,
   "type": "module",
   "scripts": {
@@ -16,5 +16,11 @@
     "sass": "^1.69.5",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
-  }
+  },
+  "author": {
+    "email": "l422y@l422y.com",
+    "name": "l422y",
+    "url": "https://l422y.com"
+  },
+  "license": "MIT"
 }
