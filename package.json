@@ -22,5 +22,13 @@
     "name": "l422y",
     "url": "https://l422y.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "nuxt",
+    "discord",
+    "oauth2",
+    "login",
+    "pinia",
+    "vue"
+  ]
 }
